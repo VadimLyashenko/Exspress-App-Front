@@ -1,0 +1,26 @@
+.header__header_bg {
+  z-index: 1;
+  background-image: url(../img/back.png);
+  height: 300px;
+  width: 100%;
+  -webkit-background-size: cover;
+          background-size: cover; }
+  .header__header_bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1f2531;
+    opacity: 0.6;
+    height: 300px; }
+
+.header_content {
+  position: relative;
+  z-index: 10; }
+
+.title_wrap {
+  border: solid #fff 2px; }
+  .title_wrap__title {
+    color: #3e3; }

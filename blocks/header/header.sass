@@ -1,0 +1,101 @@
+.header
+	text-align: center
+	&__header_bg
+		background-image: url(../img/back.png)
+		background-position: center center
+		background-size: cover
+		height: 300px
+		position: absolute
+		width: 100%
+		z-index: 1
+		&::before
+			background-color: #1f2531
+			bottom: 0
+			content: ""
+			height: 300px
+			left: 0
+			opacity: 0.6
+			position: absolute
+			right: 0
+			top: 0
+.header_content
+	color: $text
+	height: 300px
+	margin: 0 auto
+	max-width: 1366px
+	min-width: 320px
+	padding-top: 40px
+	position: relative
+	z-index: 1
+.title_wrap
+	border: solid $text 2px
+	display: inline-block
+	height: 42px
+	margin-bottom: 40px
+	padding: 0 19px 0 23px
+	position: relative
+	z-index: -1
+	&__title
+		font-family: $mons-m 
+		font-size: 26px
+		font-weight: 500
+		letter-spacing: 5px
+		text-transform: uppercase
+.main_menu
+	height: 60px
+	&::before
+		background: radial-gradient(#fff, rgba(255, 255, 255, 0.01))
+		content: ""
+		display: block
+		height: 2px
+		left: 50%
+		margin-top: -2px
+		opacity: 0.3
+		position: absolute
+		transform: translate(-50%, 0)
+		width: 90%
+	&::after
+		background: radial-gradient(#fff, rgba(255, 255, 255, 0.01))
+		content: ""
+		display: block
+		height: 2px
+		left: 50%
+		opacity: 0.3
+		position: absolute
+		transform: translate(-50%, 0)
+		width: 90%
+	&__ul
+		line-height: 60px
+		margin-bottom: 0
+		padding-left: 0
+		position: relative
+		li
+			cursor: pointer
+			display: inline-block
+			font-family: $mons-r
+			font-size: 14px
+			margin: 0 20px
+			position: relative
+			text-transform: uppercase
+			&:not(:first-child)
+				&::before
+					background: $accent
+					border-radius: 50%
+					content: ""
+					height: 4px
+					left: -25px
+					position: absolute
+					top: 27px
+					width: 4px
+			&:hover
+				color: $accent
+.page_name
+	bottom: -60px
+	left: 5%
+	position: relative
+	width: 200px
+	&__page_name_h
+		font-family: $mons-b
+		font-size: 30px
+		text-align: left
+		text-transform: uppercase

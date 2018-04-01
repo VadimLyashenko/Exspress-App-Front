@@ -1,0 +1,11 @@
+include header_content/header_content
+
+mixin header(data)
+	+b.HEADER.header
+		+e.header_bg
+		+b.header_content
+			+header_content({
+					"title_name": data.title_name,
+					"menu_arr": data.menu_arr,
+					"page_name": data.page_name
+			})

@@ -1,0 +1,14 @@
+mixin header_content(data)
+	+b.title_wrap
+		+e.H2.title= data.title_name
+	+e.A(href='#menu') ssds		
+	+b.main_menu
+		+e.UL.ul
+			each val in data.menu_arr
+				li= val
+	+b.page_name
+		+e.H1.page_name_h= data.page_name
+	+b.NAV#menu
+		+e.UL
+			each val in data.menu_arr
+				li= val
