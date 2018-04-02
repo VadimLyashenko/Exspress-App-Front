@@ -9,12 +9,14 @@ block head
 		})
 
 block header
-		+header({
-			"title_name": "Название",
-			"menu_arr": {'#1': 'Главная', '#2': 'Меню','#3': 'Главная', '#4': 'Меню'},
-			"page_name": "Меню"
-		})
+	+header({
+		"title_name": "Название",
+		"menu_arr": {'#1': 'Главная', '#2': 'Меню','#3': 'Главная', '#4': 'Меню'},
+		"page_name": "Меню"
+	})
 
+block content
+	+menu-content({})
 
 
 

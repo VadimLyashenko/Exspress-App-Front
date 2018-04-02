@@ -43,11 +43,6 @@
 		text-transform: uppercase
 .main_menu
 	height: 60px
-	a
-		сolor: $text!important
-		text-decoration: none
-		&:hover
-			сolor: $accent
 	&::before
 		background: radial-gradient(#fff, rgba(255, 255, 255, 0.01))
 		content: ""
@@ -92,8 +87,10 @@
 					position: absolute
 					top: 27px
 					width: 4px
-			&:hover
-				color: $accent
+			a
+				height: 100%
+				display: inline-block
+				
 .page_name
 	bottom: -60px
 	left: 5%
@@ -133,7 +130,7 @@
 			&:after 
 				background-color: $white
 .nav 
-	background-color: rgba(31, 37, 49, 0.6)
+	background-color: $theme-rgba
 	position: fixed
 	z-index: 9
 	top: 0

@@ -1,4 +1,31 @@
-@charset "UTF-8";
+@font-face {
+  font-family: "montserrat-bold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MontserratBold/MontserratBold.eot");
+  src: url("../fonts/MontserratBold/MontserratBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MontserratBold/MontserratBold.woff") format("woff"), url("../fonts/MontserratBold/MontserratBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "montserrat-medium";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MontserratMedium/MontserratMedium.eot");
+  src: url("../fonts/MontserratMedium/MontserratMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/MontserratMedium/MontserratMedium.woff") format("woff"), url("../fonts/MontserratMedium/MontserratMedium.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "montserrat-regular";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MontserratRegular/MontserratRegular.eot");
+  src: url("../fonts/MontserratRegular/MontserratRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/MontserratRegular/MontserratRegular.woff") format("woff"), url("../fonts/MontserratRegular/MontserratRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "montserrat-semibold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MontserratSemibold/MontserratSemibold.eot");
+  src: url("../fonts/MontserratSemibold/MontserratSemibold.eot?#iefix") format("embedded-opentype"), url("../fonts/MontserratSemibold/MontserratSemibold.woff") format("woff"), url("../fonts/MontserratSemibold/MontserratSemibold.ttf") format("truetype"); }
+
 /*!
  * Bootstrap Reboot v4.0.0 (https://getbootstrap.com)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -295,8 +322,8 @@ html {
 
 .container {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 0px;
+  padding-left: 0px;
   margin-right: auto;
   margin-left: auto; }
   @media (min-width: 576px) {
@@ -314,8 +341,8 @@ html {
 
 .container-fluid {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 0px;
+  padding-left: 0px;
   margin-right: auto;
   margin-left: auto; }
 
@@ -327,8 +354,8 @@ html {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px; }
+  margin-right: 0px;
+  margin-left: 0px; }
 
 .no-gutters {
   margin-right: 0;
@@ -347,8 +374,8 @@ html {
   position: relative;
   width: 100%;
   min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px; }
+  padding-right: 0px;
+  padding-left: 0px; }
 
 .col {
   -webkit-flex-basis: 0;
@@ -2226,34 +2253,6 @@ html {
 .mh-100 {
   max-height: 100% !important; }
 
-@font-face {
-  font-family: "montserrat-bold";
-  font-weight: normal;
-  font-style: normal;
-  src: url("../fonts/MontserratBold/MontserratBold.eot");
-  src: url("../fonts/MontserratBold/MontserratBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MontserratBold/MontserratBold.woff") format("woff"), url("../fonts/MontserratBold/MontserratBold.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "montserrat-medium";
-  font-weight: normal;
-  font-style: normal;
-  src: url("../fonts/MontserratMedium/MontserratMedium.eot");
-  src: url("../fonts/MontserratMedium/MontserratMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/MontserratMedium/MontserratMedium.woff") format("woff"), url("../fonts/MontserratMedium/MontserratMedium.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "montserrat-regular";
-  font-weight: normal;
-  font-style: normal;
-  src: url("../fonts/MontserratRegular/MontserratRegular.eot");
-  src: url("../fonts/MontserratRegular/MontserratRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/MontserratRegular/MontserratRegular.woff") format("woff"), url("../fonts/MontserratRegular/MontserratRegular.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "montserrat-semibold";
-  font-weight: normal;
-  font-style: normal;
-  src: url("../fonts/MontserratSemibold/MontserratSemibold.eot");
-  src: url("../fonts/MontserratSemibold/MontserratSemibold.eot?#iefix") format("embedded-opentype"), url("../fonts/MontserratSemibold/MontserratSemibold.woff") format("woff"), url("../fonts/MontserratSemibold/MontserratSemibold.ttf") format("truetype"); }
-
 ::-webkit-input-placeholder {
   color: #666; }
 
@@ -2276,6 +2275,12 @@ html {
 ::selection {
   background-color: #daae4f;
   color: #fff; }
+
+a {
+  color: #fff;
+  text-decoration: none !important; }
+  a:hover {
+    color: #daae4f; }
 
 .page {
   font-family: "montserrat-regular", sans-serif;
@@ -2336,11 +2341,6 @@ html {
 
 .main_menu {
   height: 60px; }
-  .main_menu a {
-    сolor: #fff !important;
-    text-decoration: none; }
-    .main_menu a:hover {
-      сolor: #daae4f; }
   .main_menu::before {
     background: -webkit-radial-gradient(#fff, rgba(255, 255, 255, 0.01));
     background: -o-radial-gradient(#fff, rgba(255, 255, 255, 0.01));
@@ -2393,8 +2393,9 @@ html {
         position: absolute;
         top: 27px;
         width: 4px; }
-      .main_menu__ul li:hover {
-        color: #daae4f; }
+      .main_menu__ul li a {
+        height: 100%;
+        display: inline-block; }
 
 .page_name {
   bottom: -60px;
@@ -2524,8 +2525,45 @@ html {
     opacity: 1;
     visibility: visible; }
 
+.menu-content-wrap {
+  padding: 0 5px;
+  top: 25px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1366px;
+  margin: auto;
+  position: relative; }
+
+.left-bar {
+  background-color: rgba(31, 37, 49, 0.6);
+  width: 265px;
+  margin-right: 15px;
+  height: 400px; }
+
+.right-bar {
+  width: 100%; }
+
+.col-md-4 {
+  background-color: #3e3;
+  max-height: 290px;
+  height: 290px;
+  border: 1px #fff solid; }
+
 /*==========  Desktop First  ==========*/
 @media (max-width: 575.98px) {
+  .menu-content-wrap {
+    display: block; }
   .burger {
     display: block; }
   .main_menu {
