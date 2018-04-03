@@ -7,6 +7,7 @@
 	max-width: 1366px
 	margin: auto
 	position: relative
+	margin-bottom: 70px
 	
 .left-bar
 	background-color: $theme-rgba
@@ -17,9 +18,126 @@
 .right-bar
 	width: 100%
 
-.col-md-4
-	background-color: #3e3
-	max-height: 290px
-	height: 290px
+.item
+	position: relative
+	// background-color: #3e3
 	border: 1px #fff solid
-	// margin-right: 10px
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	img
+		position: absolute
+		width: 100%
+		height: 100%
+		z-index: -1
+
+.item-title-wrap
+	background-color: $theme-rgba
+	padding-left: 15px
+	&__item-title
+		text-transform: uppercase
+		color: $text
+		font-size: 18px
+		font-weight: 500
+		line-height: 36px
+		margin: 0
+
+.item-bottom-wrap
+	display: flex
+	flex-direction: column
+	align-items: flex-end
+
+.item-cost-wrap
+	background-color: $theme-rgba
+	width: 100px
+	text-align: center
+	&__item-cost
+		color: $text
+		font-family: $mons-r
+		font-size: 18px
+		line-height: 36px
+		font-weight: 500
+		margin: 0
+		margin-left: 
+
+.item-desc-wrap
+	width: 100%
+	background-color: rgba(255,255,255,0.6)
+	padding: 11px
+	font-size: 14px
+	&__item-desc
+		margin-bottom: 10px
+	&__item-weight
+		font-family: $robo-r
+		margin: 0	
+.item-span
+	font-family: $mons-r
+	color: $span
+
+.item-func-wrap
+	width: 100%
+	background-color: rgba(255,255,255,0.6)
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	align-items: center
+	padding: 11px
+
+.item-quan
+	display: flex
+	flex-direction: row
+	font-family: $robo-r
+	&__inp
+		background-color: transparent
+		border: none
+		width: 40px
+		font-size: 24px
+		text-align: center
+		outline: none
+	&__quan-control
+		background-color: transparent
+		cursor: pointer
+		width: 35px
+		height: 35px
+		border: none
+		&:hover
+			color: $accent
+		&:focus
+			outline: none
+		&:active
+			transform: translate(0,2%)
+.plus
+	font-size: 24px
+	line-height: 20px
+.minus
+	font-size: 36px
+	line-height: 0px
+
+.in-cart-wrap
+	&__in-cart
+		// width: 126px
+		height: 42px
+		border: 2px solid $theme-rgba
+		color: $theme
+		background-color: transparent
+		text-transform: uppercase
+		font-size: 13px
+		cursor: pointer
+		display: flex
+		flex-direction: row
+		justify-content: center
+		align-items: center
+		&:focus
+			outline: none
+		&:hover
+			border: 2px solid $accent
+		&:active
+			transform: translate(0,2%)
+		p
+			margin: 0
+			font-weight: 600
+			white-space: nowrap
+
+.fa-shopping-cart 
+	font-size: 20px
+	margin-right: 9px

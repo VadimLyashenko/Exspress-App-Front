@@ -17,3 +17,15 @@ function toggleMenu() {
 [els.navIcon, els.overlay].forEach(function (el) {
 	el.addEventListener('click', toggleMenu);
 });
+var a = document.getElementsByClassName('item');
+var b = getComputedStyle(a[0]);
+
+for(var i = 0; i < a.length; i++){
+	a[i].style.height = b.width;
+}
+
+window.addEventListener('resize', function(e){
+	for(var i = 0; i < a.length; i++){
+		a[i].style.height = b.width;
+	}
+});

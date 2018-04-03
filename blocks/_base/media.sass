@@ -12,14 +12,47 @@
 
 //Medium: ≥768px
 +media-breakpoint-down(md)
+	.item-desc-wrap
+		padding-bottom: 0
+		font-size: 12px
+	.item-func-wrap
+		padding-top: 0
+	.item-title-wrap
+		&__item-title
+			font-size: 14px
+			line-height: 28px
+	.item-cost-wrap
+		&__item-cost
+			font-size: 14px
+			line-height: 28px
+	.item-quan
+		&__inp
+			width: 15px
+		&__quan-control
+			width: 25px
+	.in-cart-wrap
+		&__in-cart
+		p
+			font-size: 9px
+	.fa-shopping-cart 
+		font-size: 16px
+
+
 
 //Small: ≥576px
 +media-breakpoint-down(sm)
-		
+	.item-desc-wrap
+		&__item-desc
+			display: none
+
 //Extra small: >0
 +media-breakpoint-down(xs)
 	.menu-content-wrap
 		display: block
+	.left-bar
+		height: 60px
+		width: 100%
+		margin-bottom: 10px
 	.burger
 		display: block
 	.main_menu

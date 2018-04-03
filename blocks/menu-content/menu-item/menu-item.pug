@@ -1,0 +1,23 @@
+mixin menu-item(data)
+	img(src="img/tomato-soup.png", alt="")
+	+b.item-title-wrap
+		+e.H5.item-title= data.title
+	+b.item-bottom-wrap
+		+b.item-cost-wrap
+			+e.P.item-cost 300p
+		+b.item-desc-wrap
+			+e.P.item-desc 
+				span.item-span Состав: 
+				| ингридиент-1, ингридиент-2, ингридиент-3
+			+e.P.item-weight
+				span.item-span Вес: 
+				| 400г
+		+b.item-func-wrap
+			+b.item-quan
+				+e.BUTTON.quan-control.minus -
+				+e.INPUT(type="number" min="1" max="100" value="1").inp
+				+e.BUTTON.quan-control.plus +
+			+b.in-cart-wrap
+				+e.BUTTON.in-cart
+					i.fas.fa-shopping-cart 
+					p В корзину
