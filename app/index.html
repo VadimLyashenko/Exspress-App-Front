@@ -25,6 +25,16 @@
     <!-- endbuild-->
   </head>
   <body class="page">
+    <button class="burger"><span class="burger__line" id="js-nav-button"></span>
+    </button>
+    <nav class="nav" id="js-nav">
+      <ul class="menu">
+        <li>Главная</li>
+        <li>Меню</li>
+        <li>Главная</li>
+        <li>Меню</li>
+      </ul>
+    </nav>
     <header class="header">
       <div class="header__header_bg">
       </div>
@@ -33,16 +43,6 @@
           <h2 class="title_wrap__title">Название
           </h2>
         </div>
-        <button class="burger"><span class="burger__line" id="js-nav-button"></span>
-        </button>
-        <nav class="nav" id="js-nav">
-          <ul class="menu">
-            <li>Главная</li>
-            <li>Меню</li>
-            <li>Главная</li>
-            <li>Меню</li>
-          </ul>
-        </nav>
         <div class="site-overlay" id="js-overlay">
         </div>
         <div class="main_menu">
@@ -60,10 +60,11 @@
       </div>
     </header>
     <div class="menu-content-wrap">
-      <div class="left-bar">
-        <ul>
-          <li>Первое</li>
-          <li>Второе</li>
+      <div class="left-bar"><span class="left-bar__toggle-left-bar">Выберите Категорию</span>
+        <ul class="left-bar__menu">
+          <li>Первые блюда</li>
+          <li>Вторые блюда</li>
+          <li>III блюда</li>
           <li>Компот</li>
         </ul>
       </div>
@@ -76,13 +77,13 @@
             </div>
             <div class="item-bottom-wrap">
               <div class="item-cost-wrap">
-                <p class="item-cost-wrap__item-cost">300p
+                <p class="item-cost-wrap__item-cost">300р
                 </p>
               </div>
               <div class="item-desc-wrap">
-                <p class="item-desc-wrap__item-desc"> <span class="item-span">Состав: </span>ингридиент-1, ингридиент-2, ингридиент-3
+                <p class="item-desc-wrap__item-desc"> <span class="item-span">Состав: </span>ингридиент-1, ингиеыыснт-2, ингридиент-3
                 </p>
-                <p class="item-desc-wrap__item-weight"><span class="item-span">Вес: </span>400г
+                <p class="item-desc-wrap__item-weight"><span class="item-span">Вес: </span>300г
                 </p>
               </div>
               <div class="item-func-wrap">
@@ -102,111 +103,18 @@
           </div>
           <div class="col-lg-4 col-md-6 col-sm-6 item"><img src="img/tomato-soup.png" alt=""/>
             <div class="item-title-wrap">
-              <h5 class="item-title-wrap__item-title">2
+              <h5 class="item-title-wrap__item-title">ЧупЧуп
               </h5>
             </div>
             <div class="item-bottom-wrap">
               <div class="item-cost-wrap">
-                <p class="item-cost-wrap__item-cost">300p
+                <p class="item-cost-wrap__item-cost">350р
                 </p>
               </div>
               <div class="item-desc-wrap">
-                <p class="item-desc-wrap__item-desc"> <span class="item-span">Состав: </span>ингридиент-1, ингридиент-2, ингридиент-3
+                <p class="item-desc-wrap__item-desc"> <span class="item-span">Состав: </span>ингридиент-1, ингиеыыснт-2, ингридиент-3
                 </p>
-                <p class="item-desc-wrap__item-weight"><span class="item-span">Вес: </span>400г
-                </p>
-              </div>
-              <div class="item-func-wrap">
-                <div class="item-quan">
-                  <button class="item-quan__quan-control minus">-
-                  </button><input class="item-quan__inp" type="number" min="1" max="100" value="1"/>
-                  <button class="item-quan__quan-control plus">+
-                  </button>
-                </div>
-                <div class="in-cart-wrap">
-                  <button class="in-cart-wrap__in-cart"><i class="fas fa-shopping-cart"> </i>
-                    <p>В корзину</p>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-6 item"><img src="img/tomato-soup.png" alt=""/>
-            <div class="item-title-wrap">
-              <h5 class="item-title-wrap__item-title">3
-              </h5>
-            </div>
-            <div class="item-bottom-wrap">
-              <div class="item-cost-wrap">
-                <p class="item-cost-wrap__item-cost">300p
-                </p>
-              </div>
-              <div class="item-desc-wrap">
-                <p class="item-desc-wrap__item-desc"> <span class="item-span">Состав: </span>ингридиент-1, ингридиент-2, ингридиент-3
-                </p>
-                <p class="item-desc-wrap__item-weight"><span class="item-span">Вес: </span>400г
-                </p>
-              </div>
-              <div class="item-func-wrap">
-                <div class="item-quan">
-                  <button class="item-quan__quan-control minus">-
-                  </button><input class="item-quan__inp" type="number" min="1" max="100" value="1"/>
-                  <button class="item-quan__quan-control plus">+
-                  </button>
-                </div>
-                <div class="in-cart-wrap">
-                  <button class="in-cart-wrap__in-cart"><i class="fas fa-shopping-cart"> </i>
-                    <p>В корзину</p>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-6 item"><img src="img/tomato-soup.png" alt=""/>
-            <div class="item-title-wrap">
-              <h5 class="item-title-wrap__item-title">4
-              </h5>
-            </div>
-            <div class="item-bottom-wrap">
-              <div class="item-cost-wrap">
-                <p class="item-cost-wrap__item-cost">300p
-                </p>
-              </div>
-              <div class="item-desc-wrap">
-                <p class="item-desc-wrap__item-desc"> <span class="item-span">Состав: </span>ингридиент-1, ингридиент-2, ингридиент-3
-                </p>
-                <p class="item-desc-wrap__item-weight"><span class="item-span">Вес: </span>400г
-                </p>
-              </div>
-              <div class="item-func-wrap">
-                <div class="item-quan">
-                  <button class="item-quan__quan-control minus">-
-                  </button><input class="item-quan__inp" type="number" min="1" max="100" value="1"/>
-                  <button class="item-quan__quan-control plus">+
-                  </button>
-                </div>
-                <div class="in-cart-wrap">
-                  <button class="in-cart-wrap__in-cart"><i class="fas fa-shopping-cart"> </i>
-                    <p>В корзину</p>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-6 item"><img src="img/tomato-soup.png" alt=""/>
-            <div class="item-title-wrap">
-              <h5 class="item-title-wrap__item-title">5
-              </h5>
-            </div>
-            <div class="item-bottom-wrap">
-              <div class="item-cost-wrap">
-                <p class="item-cost-wrap__item-cost">300p
-                </p>
-              </div>
-              <div class="item-desc-wrap">
-                <p class="item-desc-wrap__item-desc"> <span class="item-span">Состав: </span>ингридиент-1, ингридиент-2, ингридиент-3
-                </p>
-                <p class="item-desc-wrap__item-weight"><span class="item-span">Вес: </span>400г
+                <p class="item-desc-wrap__item-weight"><span class="item-span">Вес: </span>200г
                 </p>
               </div>
               <div class="item-func-wrap">
@@ -229,6 +137,16 @@
     </div>
     <footer class="footer">
       <div class="footer__footer_bg">
+      </div>
+      <div class="footer_content">
+        <div class="social"><a class="social__social-link" href="#1"><i class="social__social-icon fab fa-vk"></i></a>
+        </div>
+        <div class="social"><a class="social__social-link" href="#2"><i class="social__social-icon fab fa-facebook-f"></i></a>
+        </div>
+        <div class="social"><a class="social__social-link" href="#3"><i class="social__social-icon fab fa-google-plus-g"></i></a>
+        </div>
+        <div class="social"><a class="social__social-link" href="#4"><i class="social__social-icon fab fa-twitter"></i></a>
+        </div>
       </div>
     </footer>
     <!-- build:js js/vendor.js-->

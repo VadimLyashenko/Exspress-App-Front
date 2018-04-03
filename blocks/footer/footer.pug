@@ -1,3 +1,16 @@
 mixin footer(data)
 	+b.FOOTER.footer
 		+e.footer_bg
+		+b.footer_content
+			+b.social
+				+e.A(href=data.vk_link).social-link
+					+e.I.social-icon.fab.fa-vk
+			+b.social
+				+e.A(href=data.fc_link).social-link
+					+e.I.social-icon.fab.fa-facebook-f
+			+b.social
+				+e.A(href=data.g_link).social-link
+					+e.I.social-icon.fab.fa-google-plus-g
+			+b.social
+				+e.A(href=data.tw_link).social-link
+					+e.I.social-icon.fab.fa-twitter

@@ -1,17 +1,17 @@
 mixin menu-item(data)
-	img(src="img/tomato-soup.png", alt="")
+	img(src=data.img, alt="")
 	+b.item-title-wrap
 		+e.H5.item-title= data.title
 	+b.item-bottom-wrap
 		+b.item-cost-wrap
-			+e.P.item-cost 300p
+			+e.P.item-cost= data.cost
 		+b.item-desc-wrap
 			+e.P.item-desc 
 				span.item-span Состав: 
-				| ингридиент-1, ингридиент-2, ингридиент-3
+				= data.desc
 			+e.P.item-weight
 				span.item-span Вес: 
-				| 400г
+				= data.weight
 		+b.item-func-wrap
 			+b.item-quan
 				+e.BUTTON.quan-control.minus -

@@ -37,22 +37,65 @@
 	.fa-shopping-cart 
 		font-size: 16px
 
-
-
 //Small: ≥576px
 +media-breakpoint-down(sm)
-	.item-desc-wrap
-		&__item-desc
-			display: none
-
+	
 //Extra small: >0
 +media-breakpoint-down(xs)
+	.item-desc-wrap
+		padding-bottom: 10px
+		font-size: 16px
+	.item-title-wrap
+		&__item-title
+			font-size: 18px
+			line-height: 36px
+	.item-cost-wrap
+		&__item-cost
+			font-size: 18px
+			line-height: 36px
+	.item-quan
+		&__inp
+			width: 40px
+		&__quan-control
+			width: 35px
+	.in-cart-wrap
+		&__in-cart
+		p
+			font-size: 14px
+	.fa-shopping-cart 
+		font-size: 20px
 	.menu-content-wrap
 		display: block
+
+	// DropDown Menu
 	.left-bar
-		height: 60px
 		width: 100%
 		margin-bottom: 10px
+		&__toggle-left-bar
+			display: block
+		&__menu
+			position: absolute
+			width: 100%
+			top: 0
+			li
+				display: block
+				position: absolute
+				top: 0
+				width: 100%
+				&:nth-child(1)
+					background-color: rgba(31, 37, 49, 0.90)
+					z-index: 4
+				&:nth-child(2)
+					background-color: rgba(31, 37, 49, 0.90)
+					z-index: 3
+				&:nth-child(3)
+					background-color: rgba(31, 37, 49, 0.90)
+					z-index: 2
+				&:nth-child(4)
+					background-color: rgba(31, 37, 49, 0.90)
+					z-index: 1
+		
+
 	.burger
 		display: block
 	.main_menu

@@ -1,6 +1,12 @@
 include header_content/header_content
 
 mixin header(data)
+	+b.BUTTON.burger
+		+e.SPAN.line(id='js-nav-button')
+	+b.NAV.nav(id='js-nav')
+		+b.UL.menu
+			each val in data.menu_arr
+				li= val
 	+b.HEADER.header
 		+e.header_bg
 		+b.header_content

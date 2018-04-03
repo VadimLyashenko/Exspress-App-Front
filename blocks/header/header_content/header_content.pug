@@ -1,12 +1,6 @@
 mixin header_content(data)
 	+b.title_wrap
 		+e.H2.title= data.title_name
-	+b.BUTTON.burger
-		+e.SPAN.line(id='js-nav-button')
-	+b.NAV.nav(id='js-nav')
-		+b.UL.menu
-			each val in data.menu_arr
-				li= val
 	+b.site-overlay(id='js-overlay')
 	+b.main_menu
 		+e.UL.ul

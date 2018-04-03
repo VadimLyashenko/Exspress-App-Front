@@ -3,14 +3,18 @@ include menu-item/menu-item
 mixin menu-content(data)
 	+b.menu-content-wrap
 		+b.left-bar
-			+b.UL
-				li Первое
-				li Второе
-				li Компот
+			+e.SPAN.toggle-left-bar Выберите Категорию
+			+e.UL.menu
+				each item in data.left_bar
+					li= item
 		+b.right-bar
 			.row
-				each val in data.menu
+				each item in data.menu
 					.col-lg-4.col-md-6.col-sm-6.item
 						+menu-item({
-							'title': val
+							'title'	 : item.title,
+							'cost'	 : item.cost,
+							'desc'	 : item.desc,
+							'weight' : item.weight,
+							'img'		 : item.img
 						})

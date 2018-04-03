@@ -13,11 +13,50 @@
 	background-color: $theme-rgba
 	width: 265px
 	margin-right: 15px
-	height: 400px
+	position: relative
+	&__menu
+		position: relative
+		width: 100%		
+		margin: 0
+		list-style: none
+		padding: 0
+		color: $text
+		font-family: $mons-s
+		font-size: 16px
+		line-height: 36px
+		font-weight: 600
+		li
+			position: relative
+			padding: 10px 0 10px 32px
+			cursor: pointer
+			user-select: none
+			&:hover
+				background-color: rgba(255,255,255,0.3)
+			&:active
+				transform: scale(0.98)
+	&__toggle-left-bar
+		position: relative
+		color: $text
+		padding: 16px
+		user-select: none
+		display: none
+		cursor: pointer
+		z-index: 20
+		background-color: $theme
+.active-drop
+	.left-bar__menu
+		li
+			&:nth-child(1)
+				transform: translateY(100%)
+			&:nth-child(2)
+				transform: translateY(200%)
+			&:nth-child(3)
+				transform: translateY(300%)
+			&:nth-child(4)
+				transform: translateY(400%)
 
 .right-bar
 	width: 100%
-
 .item
 	position: relative
 	// background-color: #3e3
