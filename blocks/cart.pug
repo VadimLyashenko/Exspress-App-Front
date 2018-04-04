@@ -1,0 +1,30 @@
+extends template
+
+block head
+	head
+		+head({
+			"title": "Название - Корзина",
+			"author": "Tera",
+			"description": "Корзина Название"
+		})
+
+block header
+	+header({
+		"title_name": "Название",
+		"menu_arr": {'#1': 'Главная', 'index.html': 'Меню','cart.html': 'Корзина', '#4': 'Контакты'},
+		"page_name": "Меню"
+	})
+
+block content
+	+cart-content({})
+
+block footer
+	+footer({
+	"vk_link": "#1",
+	"fc_link": "#2",
+	"g_link": "#3",
+	"tw_link": "#4"
+	})
+
+
+

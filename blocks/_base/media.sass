@@ -40,6 +40,7 @@
 //Small: ≥576px
 +media-breakpoint-down(sm)
 	
+
 //Extra small: >0
 +media-breakpoint-down(xs)
 	.item-desc-wrap
@@ -95,7 +96,6 @@
 					background-color: rgba(31, 37, 49, 0.90)
 					z-index: 1
 		
-
 	.burger
 		display: block
 	.main_menu
@@ -109,6 +109,17 @@
 			height: 190px
 			&::before
 				height: 190px
+	
+	// CART		
+	.cart-item
+		&__title-cost-quan-wrap
+			width: 145px
+			flex-direction: column
+		&__item-title
+			font-size: 20px
+		&__item-cost,&__all-item-cost
+			font-size: 18px
+
 
 /*==========  Mobile First  ==========*/
 

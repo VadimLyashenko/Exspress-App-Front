@@ -1,0 +1,22 @@
+mixin cart-item(data)
+	+b.cart-item
+		+e.img-title-cost-quan-wrap
+			+e.img-wrap
+				+e.IMG.item-img(src="../img/tomato-soup.png", alt="")
+			+e.title-cost-quan-wrap
+				+e.title-wrap
+					+e.H5.item-title Томатный суп
+				+e.cost-quan-wrap
+					+e.cost-wrap
+						+e.P.item-cost 300p
+					+e.quan-wrap
+						+b.item-quan
+							+e.BUTTON.quan-control.minus -
+							+e.INPUT(type="number" min="1" max="100" value="1").inp
+							+e.BUTTON.quan-control.plus +
+				+e.all-cost-del-button-wrap
+					+e.all-cost-wrap
+						+e.P.all-item-cost 900p
+					+b.del-button-wrap
+						+e.BUTTON.del-button
+							I.fa.fa-trash-alt

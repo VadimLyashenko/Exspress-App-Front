@@ -1,0 +1,82 @@
+.cart-content-wrap
+	padding: 0 5px
+	top: 25px
+	position: relative
+	max-width: 1366px
+	margin: auto
+	margin-bottom: 70px
+
+.cart
+.cart-item
+	max-width: 900px
+	margin: 30px auto
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	&__img-title-cost-quan-wrap
+		display: flex
+		justify-content: center
+		width: 100%
+	&__title-cost-quan-wrap
+		width: 100%
+		display: flex
+		justify-content: space-between
+	&__cost-quan-wrap
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		align-items: center
+		height: 35px
+	&__all-cost-del-button-wrap
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		align-items: center
+		// width: 100px
+		height: 35px
+	&__img-wrap
+		height: 162px
+		width: 162px
+		min-height: 70px
+		min-width: 70px
+		margin-right: 10px
+	&__item-img
+			width: 100%
+	&__title-wrap
+	&__item-title
+		white-space: nowrap
+		font-size: 24px
+		font-weight: 500
+		margin: 0
+	&__cost-wrap
+		margin-right: 13px
+	&__item-cost
+		font-family: $robo-r
+		font-size: 22px
+		margin: 0
+	&__all-cost-wrap
+	&__all-item-cost
+		margin: 0 
+		font-family: $robo-m
+		font-size: 22px
+
+.del-button-wrap
+	margin-left: 40px
+	&__del-button
+		width: 46px
+		height: 46px
+		border: 2px solid $theme-rgba
+		display: flex
+		justify-content: center
+		align-items: center
+		background-color: transparent
+		cursor: pointer
+		&:focus
+			outline: none
+		&:active
+			transform: translate(0,2%)
+		&:hover
+			border: 2px solid $accent
+		.fa-trash-alt
+			font-size: 22px
+			color: $theme
