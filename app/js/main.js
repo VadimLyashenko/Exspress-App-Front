@@ -1,3 +1,10 @@
+var map;
+	DG.then(function () {
+	    map = DG.map('map', {
+	        center: [54.98, 82.89],
+	        zoom: 13
+	    });
+	});
 'use strict';
 
 var els = {
@@ -18,7 +25,10 @@ function toggleMenu() {
 	el.addEventListener('click', toggleMenu);
 });
 var a = document.getElementsByClassName('item');
-var b = getComputedStyle(a[0]);
+if(a[0] != undefined){
+	var b = getComputedStyle(a[0]);
+}
+
 
 for(var i = 0; i < a.length; i++){
 	a[i].style.height = b.width;
@@ -32,21 +42,18 @@ window.addEventListener('resize', function(e){
 
 var c = document.getElementsByClassName('left-bar__toggle-left-bar');
 var d = document.getElementsByClassName('left-bar');
-var g = d[0].getElementsByTagName('li');
+if( d[0] != undefined){
+	var g = d[0].getElementsByTagName('li');
 
-c[0].onclick = function() {
-    d[0].classList.add('active-drop');
-};
-
-d[0].onclick = function(event) {
-	var t = event.target;
-	if(t.tagName == "LI"){
-		d[0].classList.remove('active-drop');
-		c[0].innerHTML=t.innerHTML;
+	c[0].onclick = function() {
+	    d[0].classList.add('active-drop');
+	};
+	
+	d[0].onclick = function(event) {
+		var t = event.target;
+		if(t.tagName == "LI"){
+			d[0].classList.remove('active-drop');
+			c[0].innerHTML=t.innerHTML;
+		}
 	}
 }
-  // $(".dropdown-list li").click(function() {
-  //   // $('.selLabel').text($(this).text());
-  //   $('.dropdown').removeClass('active');
-  // });
-
