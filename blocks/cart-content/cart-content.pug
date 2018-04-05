@@ -3,8 +3,31 @@ include cart-item/cart-item
 mixin cart-content(data)
 	+b.cart-content-wrap
 		+b.cart
-			+cart-item({})
-			+cart-item({})
-			+cart-item({})
+			+e.cart-itens-wrap
+				each item in data.cart
+					+cart-item({
+						'title'	 : item.title,
+						'cost'	 : item.cost,
+						'img'		 : item.img
+					})
+			+b.total-wrap
+				+e.P.text Итого к оплате: 
+					span 1800
+					|р
+		+b.form-wrap
+			+e.P.form-head Заполните форму ниже, чтобы оформить заказ
+			+b.form
+				+e.form-line-wrap
+					+e.P.form-text Имя:
+					+e.INPUT.form-input(type="text")
+				+e.form-line-wrap
+					+e.P.form-text Телефон:
+					+e.INPUT.form-input(type="tel")
+				+e.form-line-wrap
+					+e.P.form-text Адрес:
+					+e.INPUT.form-input
+				+b.submit-button-wrap
+					+e.BUTTON.submit-button Оформить заказ
+
 
 

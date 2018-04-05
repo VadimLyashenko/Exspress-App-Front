@@ -43,6 +43,14 @@
 
 //Extra small: >0
 +media-breakpoint-down(xs)
+	.footer
+		top: 30px
+	.form-wrap
+		&__form-head
+			font-size: 16px
+	.form
+		&__form-text
+			font-size: 16px
 	.item-desc-wrap
 		padding-bottom: 10px
 		font-size: 16px
@@ -112,8 +120,10 @@
 	
 	// CART		
 	.cart-item
-		&__title-cost-quan-wrap
+		&__title-cost-quan-allcost-wrap
 			width: 145px
+			flex-direction: column
+		&__title-cost-quan-wrap
 			flex-direction: column
 		&__item-title
 			font-size: 20px

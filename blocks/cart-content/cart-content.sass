@@ -1,5 +1,5 @@
 .cart-content-wrap
-	padding: 0 5px
+	padding: 0 15px
 	top: 25px
 	position: relative
 	max-width: 1366px
@@ -7,9 +7,16 @@
 	margin-bottom: 70px
 
 .cart
-.cart-item
 	max-width: 900px
-	margin: 30px auto
+	margin: auto
+	display: flex
+	flex-direction: column
+	align-items: flex-end
+	margin-bottom: 45px
+	&__cart-itens-wrap
+		width: 100%
+.cart-item
+	margin: 25px 0
 	display: flex
 	flex-direction: row
 	justify-content: space-between
@@ -17,8 +24,13 @@
 		display: flex
 		justify-content: center
 		width: 100%
+	&__title-cost-quan-allcost-wrap
+		width: 100%
+		display: flex
+		justify-content: space-between
 	&__title-cost-quan-wrap
 		width: 100%
+		height: 85px
 		display: flex
 		justify-content: space-between
 	&__cost-quan-wrap
@@ -27,12 +39,12 @@
 		justify-content: space-between
 		align-items: center
 		height: 35px
+		margin-right: 40px
 	&__all-cost-del-button-wrap
 		display: flex
 		flex-direction: row
 		justify-content: space-between
 		align-items: center
-		// width: 100px
 		height: 35px
 	&__img-wrap
 		height: 162px
@@ -44,7 +56,7 @@
 			width: 100%
 	&__title-wrap
 	&__item-title
-		white-space: nowrap
+		// white-space: nowrap
 		font-size: 24px
 		font-weight: 500
 		margin: 0
@@ -54,6 +66,7 @@
 		font-family: $robo-r
 		font-size: 22px
 		margin: 0
+	&__item-quan
 	&__all-cost-wrap
 	&__all-item-cost
 		margin: 0 
@@ -80,3 +93,65 @@
 		.fa-trash-alt
 			font-size: 22px
 			color: $theme
+
+.total-wrap
+	position: relative
+	&__text
+		margin: 0
+		font-size: 18px
+		span
+			font-family: $robo-m
+			font-size: 24px
+
+.form-wrap
+	max-width: 560px
+	margin: auto
+	display: flex
+	flex-direction: column
+	align-items: center
+	&__form-head
+		font-size: 18px
+		margin-bottom: 25px
+.form
+	width: 100%
+	display: flex
+	flex-direction: column
+	align-items: center
+	&__form-line-wrap
+		width: 100%	
+		display: flex
+		flex-direction: row
+		align-items: center
+		justify-content: space-between
+		margin: 10px 0
+	&__form-text
+		margin: 0
+		font-size: 18px
+		font-family: $ral-r
+	&__form-input
+		width: 70%
+		padding: 5px 10px
+		border: 3px solid $theme-rgba
+		outline: none
+		margin-right: 25px
+		&:focus
+			border: 3px solid $accent
+
+.submit-button-wrap
+	margin-top: 20px
+	&__submit-button
+		text-transform: uppercase
+		font-family: $mons-m
+		font-size: 13px
+		color: $theme
+		background-color: transparent
+		border: 2px solid $theme-rgba
+		height: 42px
+		cursor: pointer
+		padding: 0 10px
+		&:focus
+			outline: none
+		&:hover
+			border: 2px solid $accent
+		&:active
+			transform: translate(0,2%)
