@@ -3,20 +3,24 @@ extends template
 block head
 	head
 		+head({
-			"title": "Название - Корзина",
+			"title": "Название - Контакты",
 			"author": "Tera",
-			"description": "Корзина Название"
+			"description": "Контакты Название"
 		})
 
 block header
 	+header({
 		"title_name": "Название",
-		"menu_arr": {'#1': 'Главная', 'index.html': 'Меню','cart.html': 'Корзина', 'contacts.html': 'Контакты'},
-		"page_name": "Меню"
+		"menu_arr": {'index.html': 'Главная', 'menu.html': 'Меню','cart.html': 'Корзина', 'contacts.html': 'Контакты'},
+		"page_name": "Контакты"
 	})
 
 block content
-	+contacts-content({})
+	+contacts-content({
+		"address" : "г. Город ул. Улица д. 8",
+		"tel"     : "+7 (999) 999-99-99",
+		"mail"		: "mail.com"
+	})
 
 block footer
 	+footer({

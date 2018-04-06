@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <title>Название - Корзина</title>
+    <title>Название - Контакты</title>
     <meta charset="utf-8"/>
     <meta content="Tera" name="author"/>
-    <meta content="Корзина Название" name="description"/>
+    <meta content="Контакты Название" name="description"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"/>
     <meta name="HandheldFriendly" content="true"/>
     <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
@@ -25,57 +25,59 @@
     <!-- endbuild-->
   </head>
   <body class="page">
-    <button class="burger"><span class="burger__line" id="js-nav-button"></span>
-    </button>
-    <nav class="nav" id="js-nav">
-      <ul class="menu">
-        <li>Главная</li>
-        <li>Меню</li>
-        <li>Корзина</li>
-        <li>Контакты</li>
-      </ul>
-    </nav>
-    <header class="header">
-      <div class="header__header_bg">
+    <div class="page__head-content-wrap">
+      <button class="burger"><span class="burger__line" id="js-nav-button"></span>
+      </button>
+      <nav class="nav" id="js-nav">
+        <ul class="menu">
+          <li>Главная</li>
+          <li>Меню</li>
+          <li>Корзина</li>
+          <li>Контакты</li>
+        </ul>
+      </nav>
+      <header class="header">
+        <div class="header__header_bg">
+        </div>
+        <div class="header_content">
+          <div class="title_wrap">
+            <h2 class="title_wrap__title">Название
+            </h2>
+          </div>
+          <div class="site-overlay" id="js-overlay">
+          </div>
+          <div class="main_menu">
+            <ul class="main_menu__ul">
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="menu.html">Меню</a></li>
+              <li><a href="cart.html">Корзина</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="page_name">
+            <h1 class="page_name__page_name_h">Контакты
+            </h1>
+          </div>
+        </div>
+      </header>
+      <div class="contacts-content-wrap">
+        <div class="contacts">
+          <div class="contacts__line-wrap"><i class="contacts__icon fas fa-home"></i>
+            <p class="contacts__text">г. Город ул. Улица д. 8
+            </p>
+          </div>
+          <div class="contacts__line-wrap"><i class="contacts__icon fas fa-mobile-alt"></i>
+            <p class="contacts__text">+7 (999) 999-99-99
+            </p>
+          </div>
+          <div class="contacts__line-wrap"><i class="contacts__icon far fa-envelope"></i>
+            <p class="contacts__text">mail.com
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="header_content">
-        <div class="title_wrap">
-          <h2 class="title_wrap__title">Название
-          </h2>
-        </div>
-        <div class="site-overlay" id="js-overlay">
-        </div>
-        <div class="main_menu">
-          <ul class="main_menu__ul">
-            <li><a href="#1">Главная</a></li>
-            <li><a href="index.html">Меню</a></li>
-            <li><a href="cart.html">Корзина</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
-          </ul>
-        </div>
-        <div class="page_name">
-          <h1 class="page_name__page_name_h">Меню
-          </h1>
-        </div>
+      <div class="map" id="map">
       </div>
-    </header>
-    <div class="contacts-content-wrap">
-      <div class="contacts">
-        <div class="contacts__line-wrap"><i class="contacts__icon fas fa-home"></i>
-          <p class="contacts__text">г. Город ул. Улица д. 8
-          </p>
-        </div>
-        <div class="contacts__line-wrap"><i class="contacts__icon fas fa-mobile-alt"></i>
-          <p class="contacts__text">+7 (999) 999-99-99
-          </p>
-        </div>
-        <div class="contacts__line-wrap"><i class="contacts__icon far fa-envelope"></i>
-          <p class="contacts__text">г. Город ул. Улица д. 8
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="map" id="map">
     </div>
     <footer class="footer">
       <div class="footer__footer_bg">

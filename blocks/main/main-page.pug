@@ -1,0 +1,9 @@
+mixin main-page(data)
+	+b.main-wrap
+		+e.title-wrap
+			+e.H1.title= data.title
+		+e.tagline-wrap
+			+e.P.tagline= data.tagline
+		+b.submit-button-wrap
+			+e.BUTTON.submit-button.main-button
+				+e.A.link(href='menu.html') Перейти в меню

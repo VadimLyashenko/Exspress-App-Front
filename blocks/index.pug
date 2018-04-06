@@ -3,55 +3,38 @@ extends template
 block head
 	head
 		+head({
-			"title": "Название - Меню",
+			"title": "Название - Главная",
 			"author": "Tera",
-			"description": "Меню Название"
+			"description": "Главная Название"
 		})
 
 block header
+	#main-checker
+	+b.main-back
 	+header({
 		"title_name": "Название",
-		"menu_arr": {'#1': 'Главная', 'index.html': 'Меню','cart.html': 'Корзина', 'contacts.html': 'Контакты'},
-		"page_name": "Меню"
+		"menu_arr": {'index.html': 'Главная', 'menu.html': 'Меню','cart.html': 'Корзина', 'contacts.html': 'Контакты'},
+		"page_name": ""
 	})
 
 block content
-	+menu-content({
-		"left_bar": [
-				"Первые блюда", "Вторые блюда", "III блюда", "Компот"
-		],
-		"menu": {
-			"1": {
-						"title"	 : "Томатный суп",
-						"cost" 	 : "300р",
-						"desc" 	 : "ингридиент-1, ингиеыыснт-2, ингридиент-3",
-						"weight" : "300г",
-						"img"		 : "img/tomato-soup.png"
-						},
-			"2": {
-						"title"	 : "ЧупЧуп",
-						"cost" 	 : "350р",
-						"desc" 	 : "ингридиент-1, ингиеыыснт-2, ингридиент-3",
-						"weight" : "200г",
-						"img"		 : "img/tomato-soup.png"
-						},
-			"3": {
-						"title"	 : "Суп3",
-						"cost" 	 : "450р",
-						"desc" 	 : "ингридиент-1, ингиеыыснт-2, ингридиент-3",
-						"weight" : "200г",
-						"img"		 : "img/tomato-soup.png"
-						}
-		}
+	+main-page({
+		"title"		: "Мы открылись!",
+		"tagline" : "Слоган слоган Слогоанваыпып э"
 	})
 
 block footer
-	+footer({
-	"vk_link": "#1",
-	"fc_link": "#2",
-	"g_link": "#3",
-	"tw_link": "#4"
-	})
-
-
-
+	+b.FOOTER.footer
+		+b.footer_content
+			+b.social
+				+e.A(href="#1").social-link
+					+e.I.social-icon.fab.fa-vk
+			+b.social
+				+e.A(href="#12").social-link
+					+e.I.social-icon.fab.fa-facebook-f
+			+b.social
+				+e.A(href="#3").social-link
+					+e.I.social-icon.fab.fa-google-plus-g
+			+b.social
+				+e.A(href="#4").social-link
+					+e.I.social-icon.fab.fa-twitter

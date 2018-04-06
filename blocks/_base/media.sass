@@ -1,4 +1,4 @@
-@import "vars"
+// @import "vars"
 
 
 /*==========  Desktop First  ==========*/
@@ -12,6 +12,11 @@
 
 //Medium: ≥768px
 +media-breakpoint-down(md)
+	.main-wrap
+		&__title
+			font-size: 60px
+		&__tagline
+			font-size: 20px
 	.item-desc-wrap
 		padding-bottom: 0
 		font-size: 12px
@@ -43,8 +48,11 @@
 
 //Extra small: >0
 +media-breakpoint-down(xs)
-	.footer
-		top: 30px
+	.main-wrap
+		&__title
+			font-size: 40px
+		&__tagline
+			font-size: 14px
 	.form-wrap
 		&__form-head
 			font-size: 16px

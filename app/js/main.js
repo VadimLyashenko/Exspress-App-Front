@@ -1,10 +1,14 @@
 var map;
-	DG.then(function () {
-	    map = DG.map('map', {
-	        center: [54.98, 82.89],
-	        zoom: 13
-	    });
-	});
+var m = document.getElementById('map');
+	if(m != undefined){
+		DG.then(function () {
+		    map = DG.map('map', {
+		        center: [54.98, 82.89],
+		        zoom: 13
+		    });
+		});
+	}
+
 'use strict';
 
 var els = {
@@ -24,6 +28,12 @@ function toggleMenu() {
 [els.navIcon, els.overlay].forEach(function (el) {
 	el.addEventListener('click', toggleMenu);
 });
+var l = document.getElementById('main-checker');
+if(l != undefined){
+	y = document.getElementsByClassName('header__header_bg');
+	y[0].style.display = "none";
+}
+
 var a = document.getElementsByClassName('item');
 if(a[0] != undefined){
 	var b = getComputedStyle(a[0]);

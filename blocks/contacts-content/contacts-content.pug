@@ -3,11 +3,11 @@ mixin contacts-content(data)
 		+b.contacts
 			+e.line-wrap
 				+e.I.icon.fas.fa-home
-				+e.P.text г. Город ул. Улица д. 8
+				+e.P.text= data.address
 			+e.line-wrap
 				+e.I.icon.fas.fa-mobile-alt
-				+e.P.text +7 (999) 999-99-99
+				+e.P.text= data.tel
 			+e.line-wrap
 				+e.I.icon.far.fa-envelope
-				+e.P.text г. Город ул. Улица д. 8
+				+e.P.text= data.mail
 	+b.map#map
