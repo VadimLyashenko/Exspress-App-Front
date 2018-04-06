@@ -3148,6 +3148,9 @@ a {
 .map {
   height: 443px; }
 
+.hc-main {
+  height: 170px; }
+
 #main-checker {
   display: none; }
 
@@ -3190,13 +3193,13 @@ a {
     color: #daae4f;
     font-size: 86px;
     font-weight: normal;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     text-align: center; }
   .main-wrap__tagline {
     color: #fff;
     font-size: 29px;
     font-family: "montserrat-bold", sans-serif;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     text-align: center; }
 
 .submit-button-wrap__link {
@@ -3310,6 +3313,8 @@ a {
     font-size: 16px; } }
 
 @media (max-width: 575.98px) {
+  .hc-main {
+    height: 45px; }
   .main-wrap__title {
     font-size: 40px; }
   .main-wrap__tagline {
@@ -3370,7 +3375,7 @@ a {
   .page_name {
     bottom: 0px; }
   .header_content {
-    height: 190px; }
+    height: 170px; }
   .header__header_bg {
     height: 190px; }
     .header__header_bg::before {

@@ -1,0 +1,13 @@
+mixin main-header(data)
+	+b.BUTTON.burger
+		+e.SPAN.line(id='js-nav-button')
+	+b.NAV.nav(id='js-nav')
+		+b.UL.menu
+			each val in data.menu_arr
+				li= val
+	+b.HEADER.header.hc-main
+		+b.header_content
+				+header_content({
+						"title_name": data.title_name,
+						"menu_arr": data.menu_arr
+				})

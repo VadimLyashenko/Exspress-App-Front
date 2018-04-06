@@ -11,30 +11,22 @@ block head
 block header
 	#main-checker
 	+b.main-back
-	+header({
+	+main-header({
 		"title_name": "Название",
-		"menu_arr": {'index.html': 'Главная', 'menu.html': 'Меню','cart.html': 'Корзина', 'contacts.html': 'Контакты'},
-		"page_name": ""
+		"menu_arr": {'index.html': 'Главная', 'menu.html': 'Меню','cart.html': 'Корзина', 'contacts.html': 'Контакты'}
 	})
 
-block content
-	+main-page({
-		"title"		: "Мы открылись!",
-		"tagline" : "Слоган слоган Слогоанваыпып э"
-	})
+block main-content
+	+e.main-wrap
+		+main-page({
+			"title"		: "Мы открылись!",
+			"tagline" : "Слоган слоган Слогоанваыпып э"
+		})
 
 block footer
-	+b.FOOTER.footer
-		+b.footer_content
-			+b.social
-				+e.A(href="#1").social-link
-					+e.I.social-icon.fab.fa-vk
-			+b.social
-				+e.A(href="#12").social-link
-					+e.I.social-icon.fab.fa-facebook-f
-			+b.social
-				+e.A(href="#3").social-link
-					+e.I.social-icon.fab.fa-google-plus-g
-			+b.social
-				+e.A(href="#4").social-link
-					+e.I.social-icon.fab.fa-twitter
+	+main-footer({
+	"vk_link": "#1",
+	"fc_link": "#2",
+	"g_link": "#3",
+	"tw_link": "#4"
+	})
