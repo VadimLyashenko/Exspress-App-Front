@@ -8,7 +8,6 @@ var m = document.getElementById('map');
 		    });
 		});
 	}
-
 'use strict';
 
 var els = {
@@ -28,7 +27,6 @@ function toggleMenu() {
 [els.navIcon, els.overlay].forEach(function (el) {
 	el.addEventListener('click', toggleMenu);
 });
-
 var a = document.getElementsByClassName('item');
 if(a[0] != undefined){
 	var b = getComputedStyle(a[0]);

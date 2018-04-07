@@ -1,6 +1,7 @@
 mixin footer(data)
 	+b.FOOTER.footer
-		+e.footer_bg
+		if(data.bg_check == '1')
+			+e.footer_bg
 		+b.footer_content
 			+b.social
 				+e.A(href=data.vk_link).social-link
