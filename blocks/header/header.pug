@@ -8,7 +8,8 @@ mixin header(data)
 			each val in data.menu_arr
 				li= val
 	+b.HEADER.header
-		+e.header_bg
+		if(data.bg_check == '1')
+			+e.header_bg
 		+b.header_content
 			+header_content({
 					"title_name": data.title_name,

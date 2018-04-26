@@ -7,10 +7,9 @@
 	max-width: 1366px
 	margin: auto
 	position: relative
-	margin-bottom: 140px
+	margin-bottom: 100px
 	
 .left-bar
-	background-color: $theme-rgba
 	width: 265px
 	margin-right: 15px
 	position: relative
@@ -26,40 +25,69 @@
 		line-height: 36px
 		font-weight: 600
 		li
+			background-color: $theme-rgba
 			position: relative
-			padding: 10px 0 10px 32px
+			padding: 10px 0 10px 25px
 			cursor: pointer
 			user-select: none
+			border-bottom: 1px rgba(31, 37, 49, 0.2) solid
+			&:last-child
+				border: none
 			&:hover
-				background-color: rgba(255,255,255,0.3)
+				background-color: $accent
 			&:active
 				transform: scale(0.98)
-	&__toggle-left-bar
-		position: relative
-		color: $text
-		padding: 16px
-		user-select: none
-		display: none
-		cursor: pointer
-		z-index: 20
-		background-color: $theme
-.active-drop
-	.left-bar__menu
-		li
-			&:nth-child(1)
-				transform: translateY(100%)
-			&:nth-child(2)
-				transform: translateY(200%)
-			&:nth-child(3)
-				transform: translateY(300%)
-			&:nth-child(4)
-				transform: translateY(400%)
 
+.dropdown
+	display: none
+	&__button
+		border: 1px #fff solid
+		border-bottom: none
+		width: 100%
+		height: 40px
+		cursor: pointer
+		color: $text
+		font-family: $mons-s
+		text-transform: uppercase
+		background-color: $theme
+		height: 45px
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		align-items: center
+		padding: 0 25px
+		&:focus
+			outline: none
+		&:active
+			transform: scale(0.99)
+	&__menu	
+		border: 1px #fff solid
+		border-top: none
+		list-style: none
+		position: relative
+		width: 100%	
+		margin: 0
+		padding: 0
+		color: $text
+		font-family: $mons-s
+		li
+			background-color: $theme-rgba
+			cursor: pointer
+			user-select: none
+			padding: 10px 0 10px 25px
+			position: relative
+			border-bottom: 1px rgba(31, 37, 49, 0.2) solid
+			&:last-child
+				border: none
+			&:hover
+				background-color: $accent
+			&:active
+				transform: scale(0.99)
+			
 .right-bar
 	width: 100%
 .item
 	position: relative
-	// background-color: #3e3
 	border: 1px #fff solid
 	display: flex
 	flex-direction: column
@@ -155,7 +183,6 @@
 
 .in-cart-wrap
 	&__in-cart
-		// width: 126px
 		height: 42px
 		border: 2px solid $theme-rgba
 		color: $theme

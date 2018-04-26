@@ -48,8 +48,6 @@
 
 //Extra small: >0
 +media-breakpoint-down(xs)
-	.hc-main
-		height: 45px
 	.main-wrap
 		&__title
 			font-size: 40px
@@ -86,34 +84,15 @@
 	.menu-content-wrap
 		display: block
 
-	// DropDown Menu
 	.left-bar
 		width: 100%
-		margin-bottom: 10px
-		&__toggle-left-bar
-			display: block
+		border: 1px #fff solid
 		&__menu
-			position: absolute
-			width: 100%
-			top: 0
-			li
-				display: block
-				position: absolute
-				top: 0
-				width: 100%
-				&:nth-child(1)
-					background-color: rgba(31, 37, 49, 0.90)
-					z-index: 4
-				&:nth-child(2)
-					background-color: rgba(31, 37, 49, 0.90)
-					z-index: 3
-				&:nth-child(3)
-					background-color: rgba(31, 37, 49, 0.90)
-					z-index: 2
-				&:nth-child(4)
-					background-color: rgba(31, 37, 49, 0.90)
-					z-index: 1
+			display: none
+	.dropdown
+		display: block
 		
+
 	.burger
 		display: block
 	.main_menu
@@ -121,12 +100,12 @@
 	.page_name
 		bottom: 0px
 	.header_content
-		height: 170px
+		height: 150px
 	.header
 		&__header_bg
-			height: 190px
+			height: 150px
 			&::before
-				height: 190px
+				height: 150px
 	
 	// CART		
 	.cart-item

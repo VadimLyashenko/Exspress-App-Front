@@ -3,10 +3,16 @@ include menu-item/menu-item
 mixin menu-content(data)
 	+b.menu-content-wrap
 		+b.left-bar
-			+e.SPAN.toggle-left-bar Выберите Категорию
 			+e.UL.menu
 				each item in data.left_bar
 					li= item
+			+b.dropdown
+				+e.BUTTON.button Меню
+					i.fas.fa-caret-down
+					i.fas.fa-caret-up
+				+e.UL.menu
+					each item in data.left_bar
+						li= item
 		+b.right-bar
 			.row
 				each item in data.menu

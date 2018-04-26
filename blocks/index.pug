@@ -9,14 +9,14 @@ block head
 		})
 
 block header
-	#main-checker
 	+b.main-back
-	+main-header({
+	+header({
 		"title_name": "Название",
-		"menu_arr": {'index.html': 'Главная', 'menu.html': 'Меню','cart.html': 'Корзина', 'contacts.html': 'Контакты'}
+		"menu_arr": {'index.html': 'Главная', 'menu.html': 'Меню','cart.html': 'Корзина', 'contacts.html': 'Контакты'},
+		"page_name": ""
 	})
 
-block main-content
+block content
 	+e.main-wrap
 		+main-page({
 			"title"		: "Мы открылись!",
