@@ -1,0 +1,11 @@
+include left_bar/left_bar
+include gen_set/gen_set
+include titul/titul
+
+mixin administrator(data)
+	+b.admin
+		+e.wrap
+			+left_bar({})
+			+e.right
+				+gen_set({})
+				+titul({})

@@ -1,0 +1,46 @@
+mixin titul(data)
+	+b.titul
+		+e.wrap
+			+b.line_sel
+				+e.wrap
+					+e.P.text Количество слайдов
+					+e.SELECT.select 1
+						+e.OPTION 1
+						+e.OPTION 2
+						+e.OPTION 3
+						+e.OPTION 4
+						+e.OPTION 5
+						+e.OPTION 6
+						+e.OPTION 7
+						+e.OPTION 8
+						+e.OPTION 9
+						+e.OPTION 10
+			+b.slide_desc
+				+e.wrap
+					+e.P.slide_num Слайд 1:
+					+b.form
+						+e.form-line-wrap
+							+e.P.form-text Текст 1:
+							+e.INPUT.form-input(type="text")
+						+e.form-line-wrap
+							+e.P.form-text Текст 2:
+							+e.INPUT.form-input(type="text")
+					+b.line_file
+						+e.wrap
+							+e.P.text Фоновая картинка
+							+e.INPUT.input(type="file")
+			+b.slide_desc
+				+e.wrap
+					+e.P.slide_num Слайд 1:
+					+b.form
+						+e.form-line-wrap
+							+e.P.form-text Текст 1:
+							+e.INPUT.form-input(type="text")
+						+e.form-line-wrap
+							+e.P.form-text Текст 2:
+							+e.INPUT.form-input(type="text")
+					+b.line_file
+						+e.wrap
+							+e.P.text Фоновая картинка
+							+e.INPUT.input(type="file")
+			
